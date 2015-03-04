@@ -223,7 +223,7 @@
                         <organizationName>Broadleaf Commerce</organizationName>
                         <inceptionYear>2009</inceptionYear>
                         <licenseName>blc_confidential</licenseName>
-                        <licenseResolver>${project.uri}/licenses</licenseResolver>
+                        <licenseResolver>file://${project.uri}/licenses</licenseResolver>
                         <excludes>
                             <exclude>**/*.sql</exclude>
                             <exclude>**/*.html</exclude>
@@ -301,6 +301,8 @@
                                 -Xmx512m -XX:MaxPermSize=256m -Xdebug
                                 -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8083
                                 -javaagent:${jrebel.path}
+                                -javaagent:${spring.instrument.path}
+                                -noverify
                                 -Drebel.log.stdout=true
                             </argLine>
                         </configuration>
