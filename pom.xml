@@ -257,7 +257,7 @@
                         <organizationName>Broadleaf Commerce</organizationName>
                         <inceptionYear>2009</inceptionYear>
                         <licenseName>blc_confidential</licenseName>
-                        <licenseResolver>file://${project.uri}/licenses</licenseResolver>
+                        <licenseResolver>${project.baseUri}/licenses</licenseResolver>
                         <excludes>
                             <exclude>**/*.sql</exclude>
                             <exclude>**/*.html</exclude>
@@ -370,6 +370,35 @@
                                 </configuration>
                             </execution>
                         </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>aggregate-javadocs</id>
+            <activation>
+                <property>
+                    <name>performRelease</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-javadoc-plugin</artifactId>
+                        <executions>
+                            <execution>
+                                <id>attach-javadocs</id>
+                                <goals>
+                                    <goal>aggregate-jar</goal>
+                                </goals>
+                            </execution>
+                        </executions>
+                        <configuration>
+                            <minmemory>128m</minmemory>
+                            <maxmemory>1g</maxmemory>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>
