@@ -225,6 +225,7 @@
                                 <goal>prepare-agent</goal>
                             </goals>
                             <configuration>
+                                <destFile>${project.build.directory}/jacoco.exec</destFile>
                                 <propertyName>surefire.argLine</propertyName>
                             </configuration>
                         </execution>
@@ -368,6 +369,7 @@
                                 -javaagent:${spring.instrument.path}
                                 -noverify
                                 -Drebel.log.stdout=true
+                                ${surefire.argLine}
                             </argLine>
                         </configuration>
                     </plugin>
