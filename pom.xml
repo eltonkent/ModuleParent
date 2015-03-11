@@ -186,6 +186,7 @@
                         <argLine>
                             -Xmx512m
                             -javaagent:${spring.instrument.path}
+                            ${surefire.argLine}
                         </argLine>
                     </configuration>
                 </plugin>
@@ -208,6 +209,7 @@
                         <argLine>
                             -Xmx512m
                             -javaagent:${spring.instrument.path}
+                            ${failsafe.argLine}
                         </argLine>
                     </configuration>
                 </plugin>
@@ -328,6 +330,11 @@
                         <minmemory>128m</minmemory>
                         <maxmemory>1g</maxmemory>
                     </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>2.4</version>
                 </plugin>
             </plugins>
         </pluginManagement>
