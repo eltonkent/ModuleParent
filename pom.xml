@@ -10,7 +10,7 @@
 
     <scm>
         <connection>scm:git:git@github.com:BroadleafCommerce/ModuleParent.git</connection>
-        <developerConnection>scm:git:git@github.com:BroadleafCommerce/Parent.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:BroadleafCommerce/ModuleParent.git</developerConnection>
         <url>https://github.com/BroadleafCommerce/ModuleParent</url>
     </scm>
 
