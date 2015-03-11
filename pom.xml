@@ -8,6 +8,50 @@
     <name>Plugin Helper</name>
     <description>Contains plugin definitions and versions so that they do not pollute all projects</description>
 
+    <scm>
+        <connection>scm:git:git@github.com:BroadleafCommerce/ModuleParent.git</connection>
+        <developerConnection>scm:git:git@github.com:BroadleafCommerce/Parent.git</developerConnection>
+        <url>https://github.com/BroadleafCommerce/ModuleParent</url>
+    </scm>
+
+    <url>http://www.broadleafcommerce.com</url>
+    <licenses>
+        <license>
+            <name>Apache 2</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+            <comments>A business-friendly OSS license</comments>
+        </license>
+    </licenses>
+    <developers>
+        <developer>
+            <id>jeff</id>
+            <name>Jeff Fischer</name>
+            <email>jfischer@broadleafcommerce.org</email>
+            <organization>Broadleaf Commerce</organization>
+            <organizationUrl>http://www.broadleafcommerce.org</organizationUrl>
+            <roles>
+                <role>cto</role>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>-6</timezone>
+        </developer>
+        <developer>
+            <id>brian</id>
+            <name>Brian Polster</name>
+            <email>bpolster@broadleafcommerce.org</email>
+            <organization>Broadleaf Commerce</organization>
+            <organizationUrl>http://www.broadleafcommerce.org</organizationUrl>
+            <roles>
+                <role>president</role>
+                <role>architect</role>
+                <role>developer</role>
+            </roles>
+            <timezone>-6</timezone>
+        </developer>
+    </developers>
+ 
     <repositories>
         <repository>
             <id>releases</id>
