@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.broadleafcommerce</groupId>
     <artifactId>broadleaf-module-parent</artifactId>
-    <version>1.0.1-GA</version>
+    <version>1.0.2-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Plugin Helper</name>
     <description>Contains plugin definitions and versions so that they do not pollute all projects</description>
