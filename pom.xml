@@ -67,7 +67,7 @@
         <groovy.version>2.3.10</groovy.version>
         <spock.spring.version>1.0-groovy-2.3</spock.spring.version>
         <spock.core.version>1.0-groovy-2.3</spock.core.version>
-        <spring.test.version>4.1.5.RELEASE</spring.test.version>
+        <spring.test.version>4.1.6.RELEASE</spring.test.version>
     </properties>
     <build>
         <pluginManagement>
