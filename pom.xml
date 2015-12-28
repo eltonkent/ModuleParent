@@ -67,7 +67,7 @@
         <groovy.version>2.3.10</groovy.version>
         <spock.spring.version>1.0-groovy-2.3</spock.spring.version>
         <spock.core.version>1.0-groovy-2.3</spock.core.version>
-        <spring.test.version>4.1.6.RELEASE</spring.test.version>
+        <spring.test.version>4.1.8.RELEASE</spring.test.version>
     </properties>
     <build>
         <pluginManagement>
@@ -476,13 +476,28 @@
                             <execution>
                                 <id>attach-javadocs</id>
                                 <goals>
-                                    <goal>aggregate-jar</goal>
+                                    <goal>jar</goal>
                                 </goals>
                             </execution>
                         </executions>
                         <configuration>
                             <minmemory>128m</minmemory>
                             <maxmemory>1g</maxmemory>
+                        </configuration>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>sources</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-source-plugin</artifactId>
+                        <version>${maven.source.plugin.version}</version>
+                        <configuration>
+                            <attach>true</attach>
                         </configuration>
                     </plugin>
                 </plugins>
