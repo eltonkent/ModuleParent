@@ -158,7 +158,7 @@
                         </excludes>
                         <argLine>
                             -Xmx512m
-                            -javaagent:${project.build.directory}/agents/spring-instrument.jar
+                            -javaagent:"${project.build.directory}/agents/spring-instrument.jar"
                             ${surefire.argLine}
                         </argLine>
                     </configuration>
@@ -181,7 +181,7 @@
                         </includes>
                         <argLine>
                             -Xmx512m
-                            -javaagent:${project.build.directory}/agents/spring-instrument.jar
+                            -javaagent:"${project.build.directory}/agents/spring-instrument.jar"
                             ${failsafe.argLine}
                         </argLine>
                     </configuration>
@@ -494,7 +494,7 @@
                                 -Xmx512m -XX:MaxPermSize=256m -Xdebug
                                 -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8083
                                 -javaagent:${jrebel.path}
-                                -javaagent:${project.build.directory}/agents/spring-instrument.jar
+                                -javaagent:"${project.build.directory}/agents/spring-instrument.jar"
                                 -noverify
                                 -Drebel.log.stdout=true
                                 ${surefire.argLine}
