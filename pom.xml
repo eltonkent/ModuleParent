@@ -12,46 +12,8 @@
         <developerConnection>scm:git:git@github.com:BroadleafCommerce/ModuleParent.git</developerConnection>
         <url>https://github.com/BroadleafCommerce/ModuleParent</url>
       <tag>HEAD</tag>
-  </scm>
-
+    </scm>
     <url>http://www.broadleafcommerce.com</url>
-    <licenses>
-        <license>
-            <name>Apache 2</name>
-            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
-            <distribution>repo</distribution>
-            <comments>A business-friendly OSS license</comments>
-        </license>
-    </licenses>
-    <developers>
-        <developer>
-            <id>jeff</id>
-            <name>Jeff Fischer</name>
-            <email>jfischer@broadleafcommerce.org</email>
-            <organization>Broadleaf Commerce</organization>
-            <organizationUrl>http://www.broadleafcommerce.org</organizationUrl>
-            <roles>
-                <role>cto</role>
-                <role>architect</role>
-                <role>developer</role>
-            </roles>
-            <timezone>-6</timezone>
-        </developer>
-        <developer>
-            <id>brian</id>
-            <name>Brian Polster</name>
-            <email>bpolster@broadleafcommerce.org</email>
-            <organization>Broadleaf Commerce</organization>
-            <organizationUrl>http://www.broadleafcommerce.org</organizationUrl>
-            <roles>
-                <role>president</role>
-                <role>architect</role>
-                <role>developer</role>
-            </roles>
-            <timezone>-6</timezone>
-        </developer>
-    </developers>
- 
     <repositories>
         <repository>
             <id>releases</id>
@@ -238,7 +200,7 @@
                 <plugin>
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>license-maven-plugin</artifactId>
-                    <version>1.5</version>
+                    <version>1.8</version>
                     <configuration>
                         <verbose>false</verbose>
                         <addSvnKeyWords>false</addSvnKeyWords>
@@ -266,7 +228,6 @@
                             <id>first</id>
                             <goals>
                                 <goal>update-file-header</goal>
-                                <goal>update-project-license</goal>
                             </goals>
                             <phase>process-sources</phase>
                             <configuration>
@@ -420,7 +381,6 @@
                                                 <artifactId>license-maven-plugin</artifactId>
                                                 <versionRange>[1.5,)</versionRange>
                                                 <goals>
-                                                    <goal>update-project-license</goal>
                                                     <goal>update-file-header</goal>
                                                 </goals>
                                             </pluginExecutionFilter>
