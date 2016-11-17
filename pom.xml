@@ -28,7 +28,7 @@
     </repositories>
     <properties>
         <attachSources>true</attachSources>
-        <groovy.version>2.3.10</groovy.version>
+        <groovy.version>2.3.11</groovy.version>
         <spock.spring.version>1.0-groovy-2.3</spock.spring.version>
         <spock.core.version>1.0-groovy-2.3</spock.core.version>
         <spring.test.version>4.1.9.RELEASE</spring.test.version>
