@@ -28,11 +28,11 @@
     </repositories>
     <properties>
         <attachSources>false</attachSources>
-        <groovy.version>2.3.11</groovy.version>
-        <spock.spring.version>1.0-groovy-2.3</spock.spring.version>
-        <spock.core.version>1.0-groovy-2.3</spock.core.version>
-        <spring.test.version>4.1.9.RELEASE</spring.test.version>
-        <spring.instrument.version>4.1.9.RELEASE</spring.instrument.version>
+        <groovy.version>2.4.7</groovy.version>
+        <spock.spring.version>1.1-groovy-2.4-rc-3</spock.spring.version>
+        <spock.core.version>1.1-groovy-2.4-rc-3</spock.core.version>
+        <spring.test.version>4.3.5.RELEASE</spring.test.version>
+        <spring.instrument.version>4.3.5.RELEASE</spring.instrument.version>
     </properties>
     <build>
         <pluginManagement>
