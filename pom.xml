@@ -142,7 +142,7 @@
                             <include>**/*IT*</include>
                         </includes>
                         <argLine>
-                            -Xmx512m
+                            -Xmx1g
                             -javaagent:"${project.build.directory}/agents/spring-instrument.jar"
                             ${failsafe.argLine}
                         </argLine>
@@ -470,6 +470,21 @@
                                 -noverify
                                 -Drebel.log.stdout=true
                                 ${surefire.argLine}
+                            </argLine>
+                        </configuration>
+                    </plugin>
+                    <plugin>
+                        <groupId>org.apache.maven.plugins</groupId>
+                        <artifactId>maven-failsafe-plugin</artifactId>
+                        <configuration>
+                            <argLine>
+                                -Xmx1g -XX:MaxPermSize=512m -Xdebug
+                                -Xrunjdwp:transport=dt_socket,server=y,suspend=n,address=8084
+                                -agentpath:${jrebel.path}
+                                -javaagent:"${project.build.directory}/agents/spring-instrument.jar"
+                                -noverify
+                                -Drebel.log.stdout=true
+                                ${failsafe.argLine}
                             </argLine>
                         </configuration>
                     </plugin>
