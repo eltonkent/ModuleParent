@@ -29,7 +29,7 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <attachSources>false</attachSources>
-        <groovy.version>2.4.9</groovy.version>
+        <groovy.version>2.4.10</groovy.version>
         <spock.spring.version>1.1-groovy-2.4-rc-3</spock.spring.version>
         <spock.core.version>1.1-groovy-2.4-rc-3</spock.core.version>
         <spring.test.version>4.3.7.RELEASE</spring.test.version>
@@ -118,28 +118,11 @@
                             <configuration>
                                 <includes>
                                     <!-- Include all the default Surefire tests -->
-                                    <include>**/Test*.java,**/*Test.java,**/*TestCase.java</include>
-                                </includes>
-                                <excludes>
-                                    <exclude>**/adminjvm/**,**/sitejvm/**,**/browsertests/**,**/*Spec*</exclude>
-                                </excludes>
-                            </configuration>
-                        </execution>
-                        <execution>
-                            <id>spock-test</id>
-                            <goals>
-                                <goal>test</goal>
-                            </goals>
-                            <configuration>
-                                <includes>
-                                    <!-- Include the naming scheme for Spock Specs -->
-                                    <include>**/*Spec*</include>
+                                    <include>**/Test*.java,**/*Test.java,**/*TestCase.java,**/*Spec*</include>
                                 </includes>
                                 <excludes>
                                     <exclude>**/adminjvm/**,**/sitejvm/**,**/browsertests/**</exclude>
                                 </excludes>
-                                <!-- Explicitly get TestNG out of the picture for Spock-->
-                                <testNGArtifactName>none:none</testNGArtifactName>
                             </configuration>
                         </execution>
                         <execution>
@@ -716,6 +699,18 @@
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
                 <version>4.12</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.testng</groupId>
+                <artifactId>testng</artifactId>
+                <version>6.11</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.hsqldb</groupId>
+                <artifactId>hsqldb</artifactId>
+                <version>2.3.4</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
