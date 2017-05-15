@@ -36,9 +36,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <attachSources>false</attachSources>
-        <groovy.version>2.4.10</groovy.version>
-        <spock.spring.version>1.1-groovy-2.4-rc-4</spock.spring.version>
-        <spock.core.version>1.1-groovy-2.4-rc-4</spock.core.version>
+        <groovy.version>2.4.11</groovy.version>
+        <spock.spring.version>1.1-groovy-2.4</spock.spring.version>
+        <spock.core.version>1.1-groovy-2.4</spock.core.version>
         <spring.test.version>4.3.8.RELEASE</spring.test.version>
         <spring.instrument.version>4.3.8.RELEASE</spring.instrument.version>
         <jackson.version>2.8.8</jackson.version>
