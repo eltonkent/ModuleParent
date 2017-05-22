@@ -586,7 +586,7 @@
             </build>
         </profile>
         <profile>
-            <id>sources</id>
+            <id>build-sources</id>
             <activation>
                 <property>
                     <name>attachSources</name>
