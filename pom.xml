@@ -572,7 +572,7 @@
             <id>sources</id>
             <activation>
                 <property>
-                    <name>attachSources</name>
+                    <name>performRelease</name>
                     <value>true</value>
                 </property>
             </activation>
