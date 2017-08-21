@@ -11,7 +11,7 @@
         <connection>scm:git:git@github.com:BroadleafCommerce/ModuleParent.git</connection>
         <developerConnection>scm:git:git@github.com:BroadleafCommerce/ModuleParent.git</developerConnection>
         <url>https://github.com/BroadleafCommerce/ModuleParent</url>
-      <tag>HEAD</tag>
+        <tag>HEAD</tag>
     </scm>
     <url>http://www.broadleafcommerce.com</url>
     <repositories>
@@ -24,6 +24,14 @@
             <id>snapshots</id>
             <name>public snapshots</name>
             <url>http://nexus.broadleafcommerce.org/nexus/content/groups/community-snapshots/</url>
+        </repository>
+        <!-- TODO: Required for TestNG 6.12+ since it is not in Maven Central. See
+            https://groups.google.com/forum/#!topic/testng-users/nIGIqKliavM discussion for the latest
+			status -->
+        <repository>
+            <id>jcenter</id>
+            <name>jcenter</name>
+            <url>https://jcenter.bintray.com</url>
         </repository>
     </repositories>
     <properties>
