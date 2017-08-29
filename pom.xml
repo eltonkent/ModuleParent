@@ -142,6 +142,20 @@
                                 <includes>
                                     <include>**/adminjvm/**</include>
                                 </includes>
+                                <excludes>
+                                    <exclude>**/boot/**</exclude>
+                                </excludes>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>admin-only-spring-boot-test</id>
+                            <goals>
+                                <goal>test</goal>
+                            </goals>
+                            <configuration>
+                                <includes>
+                                    <include>**/adminjvm/**/boot/**</include>
+                                </includes>
                             </configuration>
                         </execution>
                         <execution>
@@ -152,6 +166,20 @@
                             <configuration>
                                 <includes>
                                     <include>**/sitejvm/**</include>
+                                </includes>
+                                <excludes>
+                                    <exclude>**/boot/**</exclude>
+                                </excludes>
+                            </configuration>
+                        </execution>
+                        <execution>
+                            <id>site-only-spring-boot-test</id>
+                            <goals>
+                                <goal>test</goal>
+                            </goals>
+                            <configuration>
+                                <includes>
+                                    <include>**/sitejvm/**/boot/**</include>
                                 </includes>
                             </configuration>
                         </execution>
