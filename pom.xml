@@ -34,6 +34,7 @@
         <spock.core.version>1.1-groovy-2.4</spock.core.version>
         <spring.test.version>5.0.6.RELEASE</spring.test.version>
         <spring.instrument.version>5.0.6.RELEASE</spring.instrument.version>
+        <spring.context.indexer.version>5.0.6.RELEASE</spring.context.indexer.version>
         <jackson.version>2.9.5</jackson.version>
         <lombok.version>1.16.18</lombok.version>
     </properties>
@@ -701,6 +702,12 @@
                 <artifactId>groovy-all</artifactId>
                 <version>${groovy.version}</version>
                 <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-context-indexer</artifactId>
+                <version>${spring.context.indexer.version}</version>
+                <optional>true</optional>
             </dependency>
             <dependency>
                 <groupId>org.spockframework</groupId>
