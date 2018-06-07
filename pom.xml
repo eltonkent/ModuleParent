@@ -704,12 +704,6 @@
                 <scope>test</scope>
             </dependency>
             <dependency>
-                <groupId>org.springframework</groupId>
-                <artifactId>spring-context-indexer</artifactId>
-                <version>${spring.context.indexer.version}</version>
-                <optional>true</optional>
-            </dependency>
-            <dependency>
                 <groupId>org.spockframework</groupId>
                 <artifactId>spock-spring</artifactId>
                 <version>${spock.spring.version}</version>
@@ -766,4 +760,12 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context-indexer</artifactId>
+            <version>${spring.context.indexer.version}</version>
+            <optional>true</optional>
+        </dependency>
+    </dependencies>
 </project>
