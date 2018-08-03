@@ -36,6 +36,7 @@
         <spring.instrument.version>5.0.8.RELEASE</spring.instrument.version>
         <jackson.version>2.9.6</jackson.version>
         <lombok.version>1.16.22</lombok.version>
+        <hsqldb.version>2.4.1</hsqldb.version>
     </properties>
     <build>
         <pluginManagement>
@@ -754,7 +755,7 @@
             <dependency>
                 <groupId>org.hsqldb</groupId>
                 <artifactId>hsqldb</artifactId>
-                <version>2.4.0</version>
+                <version>${hsqldb.version}</version>
                 <scope>test</scope>
             </dependency>
         </dependencies>
