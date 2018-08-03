@@ -29,13 +29,13 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <attachSources>true</attachSources>
-        <groovy.version>2.4.12</groovy.version>
+        <groovy.version>2.4.15</groovy.version>
         <spock.spring.version>1.1-groovy-2.4</spock.spring.version>
         <spock.core.version>1.1-groovy-2.4</spock.core.version>
-        <spring.test.version>5.0.7.RELEASE</spring.test.version>
-        <spring.instrument.version>5.0.7.RELEASE</spring.instrument.version>
+        <spring.test.version>5.0.8.RELEASE</spring.test.version>
+        <spring.instrument.version>5.0.8.RELEASE</spring.instrument.version>
         <jackson.version>2.9.6</jackson.version>
-        <lombok.version>1.16.18</lombok.version>
+        <lombok.version>1.16.22</lombok.version>
     </properties>
     <build>
         <pluginManagement>
