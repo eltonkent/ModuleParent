@@ -2,7 +2,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.broadleafcommerce</groupId>
     <artifactId>broadleaf-module-parent</artifactId>
-    <version>1.0.15-GA</version>
+    <version>1.0.16-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>Plugin Helper</name>
     <description>Contains plugin definitions and versions so that they do not pollute all projects</description>
@@ -11,7 +11,7 @@
         <connection>scm:git:git@github.com:BroadleafCommerce/ModuleParent.git</connection>
         <developerConnection>scm:git:git@github.com:BroadleafCommerce/ModuleParent.git</developerConnection>
         <url>https://github.com/BroadleafCommerce/ModuleParent</url>
-      <tag>broadleaf-module-parent-1.0.15-GA</tag>
+      <tag>HEAD</tag>
     </scm>
     <url>http://www.broadleafcommerce.com</url>
     <repositories>
